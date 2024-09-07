@@ -1,10 +1,10 @@
-- name: variables form prompt
+- name: prompt variable
   hosts: localhost
   vars_prompt:
-    - name: NAME
-      prompt: "Enter user name"
-      private: no
+  - name: myname
+    prompt: enter your name
+    private: no
   tasks:
-  - name: prompt variable
+  - name: prompting variable
     ansible.builtin.debug:
-      msg: "The entered name is : {{NAME}}"
+      msg: "the enterd name is :{{myname}}"
