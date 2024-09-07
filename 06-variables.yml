@@ -3,6 +3,6 @@
   vars_files:
     - variablelist.yml
   tasks:
-    - name: variable from files
-      ansiblie.builtin.debug:
-        msg: "my learning course is {{Course}}"
+  - name: variable from files
+    ansiblie.builtin.debug:
+      msg: "my learning course is {{Course}}"
