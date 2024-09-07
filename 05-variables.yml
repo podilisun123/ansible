@@ -1,0 +1,9 @@
+- name: variables 
+  hosts: localhost
+  vars:
+    First: "podili"
+    Second: "sundar"
+  tasks:
+  - name: task level
+    ansible.builtin.debug:
+      msg: "the First name is {{First}, the second name is: {{Second}}}"
