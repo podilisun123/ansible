@@ -1,8 +1,7 @@
 - name: variables files
   hosts: localhost
   vars_files:
-    Course: "Devops"
-  tasks:
+  - variableslist.yml
   - name: variable from files
     ansiblie.builtin.debug:
       msg: "my learning course is {{Course}}"
