@@ -1,7 +1,7 @@
 - name: variables form prompt
   hosts: localhost
   vars_prompt:
-    - name: username
+    - name: NAME
       prompt: "Enter user name"
       private: no
   tasks:
