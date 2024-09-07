@@ -1,0 +1,6 @@
+- name: pinging the hosts
+  hosts: web
+  tasks:
+  - name: ping moudle
+    ansible.builtin.ping:
+      
