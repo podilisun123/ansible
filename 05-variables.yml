@@ -4,6 +4,8 @@
     First: podili
     Second: sundar
   tasks:
-  - name: task level
+  - name: task level overriding
+    vars: 
+      First: "sreshta"
     ansible.builtin.debug:
       msg: "the First name is {{First}}, the second name is: {{Second}}"
