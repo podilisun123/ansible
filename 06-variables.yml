@@ -4,5 +4,5 @@
     - variablelist.yml
   tasks:
   - name: variable from files
-    ansiblie.builtin.debug:
+    ansible.builtin.debug:
       msg: "my learning course is {{Course}}"
