@@ -1,8 +1,8 @@
 - name: variables 
   hosts: localhost
   vars:
-    First: podili
-    Second: sundar
+    First: "podili"
+    Second: "sundar"
   tasks:
   - name: task level overriding
     vars: 
