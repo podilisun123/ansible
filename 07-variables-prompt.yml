@@ -1,7 +1,9 @@
 - name: variables form prompt
   hosts: localhost
   vars_prompt:
-    read "Enter your name:" NAME
+    - name: username
+      prompt: "Enter user name"
+      private: no
   tasks:
   - name: prompt variable
     ansible.builtin.debug:
