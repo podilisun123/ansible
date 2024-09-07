@@ -6,4 +6,4 @@
   tasks:
   - name: task level
     ansible.builtin.debug:
-      msg: "the First name is {{First}, the second name is: {{Second}}}"
+      msg: "the First name is {{First}}, the second name is: {{Second}}"
