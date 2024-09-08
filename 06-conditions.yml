@@ -10,4 +10,10 @@
   - name: print the user info
     ansible.builtin.debug:
       msg: "user infor: {{USER}}"
+  - name: create user
+    ansible.builtin.command: useradd sundar
+    when: USER.rc !=0
+  - name : user success
+    ansible.builtin.debug:
+     msg: "user success fully create"
     
