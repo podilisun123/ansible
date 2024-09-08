@@ -13,4 +13,4 @@
   tasks:
   - name: print the data types
     ansible.builtin.debug:
-     msg: "i am jiong {{course}, we are used {{Tools}}, and my having {{Experience}} "
+     msg: "i am jiong {{course}}, we are used {{Tools}}, and my having {{Experience}} "
