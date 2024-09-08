@@ -1,0 +1,7 @@
+- name: using coniditions create user
+  hosts: loclahost
+  become: yes
+  tasks:
+  - name: check the user
+    ansible.builtin.command: id sundar
+    
