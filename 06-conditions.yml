@@ -1,5 +1,5 @@
 - name: using coniditions create user
-  hosts: loclahost
+  hosts: web
   become: yes
   tasks:
   - name: check the user
