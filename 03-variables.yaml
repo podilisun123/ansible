@@ -1,0 +1,8 @@
+- name: variables using yaml
+  hosts: localhost
+  vars:
+    name: "sundar"
+  tasks: 
+  - name: variable at play level
+    ansible.builtin.debug:
+      msg: "varaible name is {{Name}}"
