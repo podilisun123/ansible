@@ -1,0 +1,10 @@
+- name: over ridden variable
+  hosts: localhost
+  vars:
+    Wish: "good morining"
+  tasks:
+  - name: override the variable
+    vars:
+      Wish: "good night"
+    ansible.builtin.debug:
+      msg: "hi sundar {{Wish}}"
