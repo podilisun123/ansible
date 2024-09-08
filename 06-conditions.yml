@@ -5,6 +5,8 @@
   - name: check the user
     ansible.builtin.command: id sundar
     register: USER
+    ignore_errors: true
+
   - name: print the user info
     ansible.builtlin.debug:
       msg: "user infor: {{USER}}"
