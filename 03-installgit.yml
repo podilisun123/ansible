@@ -1,8 +1,0 @@
-- name: install git
-  hosts: web
-  become: yes
-  tasks: 
-  - name: installing git
-    ansible.builtin.dnf:
-      name: nginx
-      state: latest    

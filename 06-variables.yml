@@ -1,8 +1,0 @@
-- name: variables files
-  hosts: localhost
-  vars_files:
-    - variablelist.yml
-  tasks:
-  - name: variable from files
-    ansible.builtin.debug:
-      msg: "my learning course is {{Course}}"
