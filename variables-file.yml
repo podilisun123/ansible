@@ -1,6 +1,6 @@
 - name: variable from files
   hosts: localhost
-  vars_file:
+  vars_files:
   - variable-info.yml
   tasks:
   - name: print vaiables
