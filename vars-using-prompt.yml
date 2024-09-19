@@ -1,7 +1,7 @@
 - name: using prompt variable
   hosts: localhost
   vars_prompt:
-    name: company
+  - name: company
     prompt: enter your company name
     private: false
   task:
