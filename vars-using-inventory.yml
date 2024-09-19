@@ -3,4 +3,4 @@
   tasks:
   - name: print inventory variables
     ansible.builtin.debug:
-      msg: "print brothers  names is {{brname1}} and {{brname2}}"
+      msg: "print brothers  names is {{Brname1}} and {{Brname2}}"
