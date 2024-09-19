@@ -1,5 +1,5 @@
 - name: using inventory variable
-  hosts: localhost
+  hosts: web
   vars:
     wishes: "good morning"
   tasks:

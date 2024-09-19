@@ -1,5 +1,5 @@
 - name: using prompt variable
-  hosts: localhost
+  hosts: web
   vars_prompt:
   - name: company
     prompt: enter your company name
