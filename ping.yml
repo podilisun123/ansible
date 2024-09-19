@@ -3,3 +3,6 @@
   tasks:
   - name: ping the web  servers
     ansible.builtin.ping:
+  - name: print the text on the console
+    ansible.builtin.debug:
+      msg: "this first ansible"
