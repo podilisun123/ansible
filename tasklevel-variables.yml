@@ -11,6 +11,7 @@
       duration: "1 month"
     ansible.builtin.debug:
       msg: "the course {{course}} and trainer{{trainer}} but duration {{duration}}"
+
   - name: print play variables
-    anansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "the course {{course}} and trainer{{trainer}} but duration {{duration}}"
