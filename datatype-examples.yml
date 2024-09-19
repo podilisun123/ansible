@@ -1,0 +1,18 @@
+- name: ansible datatypes
+  hosts: web
+  vars:
+    Course: AWS-DEVOPS
+    Tools: 
+    - GIT
+    - SHELL
+    - ANSIBLE
+    - LINUX
+    Experiance:
+      Linux: 5
+      Shell: 3
+      Git: 2
+    Certificate: True
+  tasks:
+  - name: print all type of variables here
+    ansible.builtin.debug:
+      msg: " {{Course}} and tools are {{Tools}}   {{Experiance}} {{Certificate}}"
