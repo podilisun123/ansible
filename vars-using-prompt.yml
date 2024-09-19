@@ -1,0 +1,10 @@
+- name: using prompt variable
+  hosts: localhost
+  vars_prompt:
+    name: company
+    prompt: enter your company name
+    private: false
+  task:
+  - name : print prompt variables
+    ansible.builtin.debug:
+      msg: "print comapany names is {{company}}"
