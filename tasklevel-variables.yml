@@ -1,0 +1,13 @@
+- name: use task lever variables
+  hosts: localhost
+  vars:
+    course: "linux"
+    trainer: "sathi"
+    duration: "3 months"
+  tasks:
+  - name: print variables
+    vars:
+      course: "kubernetes"
+      duration: "1 month"
+    ansible.builtin.debug:
+      msg: "the course {{course}} and trainer{{trainer}} but duration {{duration}}"
