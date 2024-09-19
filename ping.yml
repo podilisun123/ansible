@@ -1,7 +1,7 @@
 - name : ping the servers
   hosts: web
   vars:
-   name="sundar"
+   name: sundar
   tasks:
   - name: ping the web  servers
     ansible.builtin.ping:
