@@ -1,8 +1,8 @@
 - name: using inventory variable
   hosts: web
-  vars:
-    wishes: "good morning"
+  # vars:
+  #   wishes: "good morning"
   tasks:
   - name: print inventory variables
     ansible.builtin.debug:
-      msg: "Hi {{wishes}} print brothers  names is {{Brname1}} and {{Brname2}}"
+      msg: "print brothers  names is {{Brname1}} and {{Brname2}}"
