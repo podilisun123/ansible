@@ -1,0 +1,6 @@
+- name: using inventory variable
+  hosts: localhost
+  tasks:
+  - name: print inventory variables
+    ansible.builtin.debug:
+      msg: "print brothers  names is {{brname1}} and {{brname2}}"
