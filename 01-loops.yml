@@ -1,0 +1,11 @@
+- name: using loops
+  hosts: localhost
+  tasks:
+  - name: print multiple names
+    ansible.builtin.debug:
+      msg: "the course is {item}""
+    loop:
+    - shell
+    - linux
+    - git
+    - docker
