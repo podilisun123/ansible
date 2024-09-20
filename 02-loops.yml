@@ -4,8 +4,8 @@
   tasks:
   - name: install and start servers
     ansible.builtin.dnf:
-      name: {{item.name}} 
-      state: {{item.state}}
+      name: "{{item.name}}" 
+      state: "{{item.state}}"
     loop:
     - { name= "git", state= "latest" }
     - { name= "docker", state= "latest" }
