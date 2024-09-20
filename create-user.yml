@@ -1,0 +1,6 @@
+- name: user management
+  hosts: localhost
+  tasks:
+  - name: check the user
+    ansible.builtin.command: id havi
+    ignore_errors: True
