@@ -3,4 +3,13 @@
   tasks:
   - name: check the user
     ansible.builtin.command: id havi
+    register: USER
     ignore_errors: True
+
+  - name: create user
+    ansible.builtin.command: useradd havi
+    when: USER.rc !=0
+  
+  - name: hello info
+    ansible.builtin.debug:
+      msg: "the user creation was successfull"
