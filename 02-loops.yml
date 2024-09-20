@@ -7,5 +7,5 @@
       name: name.{{item}} 
       state: state.{{item}}
     loop:
-    - {name="git", state="latest"}
+    - {name="git" state="latest"}
     - {name="docker" state="obsent"}
