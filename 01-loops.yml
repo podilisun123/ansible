@@ -3,7 +3,7 @@
   tasks:
   - name: print multiple names
     ansible.builtin.debug:
-      msg: "the course is {item}""
+      msg: "the course is {{item}}"
     loop:
     - shell
     - linux
