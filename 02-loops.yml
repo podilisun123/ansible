@@ -8,4 +8,4 @@
       state: state.{{item}}
     loop:
     - {name="git" state="latest"}
-    - {name="docker" state="obsent"}
+    - {name="docker" state="latest"}
