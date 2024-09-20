@@ -1,5 +1,6 @@
 - name: user management
   hosts: localhost
+  become: yes
   tasks:
   - name: check the user
     ansible.builtin.command: id havi
