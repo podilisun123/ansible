@@ -1,0 +1,11 @@
+- name: compare numbers
+  hosts: localhost
+  vars_prompt:
+    name: number
+    prompt: enter number
+    private: no
+  tasks:
+  - name: number greate than 10
+    ansible.builtin.debug:
+      msg: "the enterd number is {{number}} greater than 10"
+    when: number >10
