@@ -1,5 +1,6 @@
 - name : install multiple servers
   hosts: localhost
+  become: yes
   tasks:
   - name: install and start servers
     ansible.builtin.dnf:
